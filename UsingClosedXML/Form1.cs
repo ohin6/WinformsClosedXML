@@ -28,20 +28,10 @@ namespace UsingClosedXML
             //SELECT FILE AND STORE
             var fileContent = string.Empty;
             string[] filePath;
-
-            if (Lbl_1.Text == "Please Select a File")
-            {
-                Lbl_warning.ForeColor = Color.Red;
-                Lbl_warning.Text = "Please select a file before continuing";
-                return;
-            }
-
-            Lbl_warning.Text = "";
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "excel|*.xls";
+                openFileDialog.InitialDirectory = "y:\\";
+                openFileDialog.Filter = "excel|*.xls; *.xlsx; ";
                 openFileDialog.Multiselect = true;
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
@@ -52,8 +42,9 @@ namespace UsingClosedXML
                     filePath = openFileDialog.FileNames;
                     string filePathString = string.Join("\n", filePath);
                     Lbl_1.Text = filePathString;
+                    //LOOP THROUGH FILES- if we choose to do this we'll probably want to use a separate output file for each file
                 }
-                
+
             }
         }
 
@@ -62,8 +53,7 @@ namespace UsingClosedXML
         {
             IXLWorkbook wb = new XLWorkbook();//Create workbook used closedXML
             IXLWorksheet ws = wb.Worksheets.Add("Sample Sheet");//In workbook create worksheet and give name
-           //To delete worksheet ---> wb.Worksheet("Sample Sheet").Delete();
-
+                                                                //To delete worksheet ---> wb.Worksheet("Sample Sheet").Delete();
 
             //Give headers using textbox inputs
 
@@ -76,16 +66,29 @@ namespace UsingClosedXML
             ws.Cell(1, 7).Value = box_0107.Text;
             ws.Cell(1, 8).Value = box_0108.Text;
 
-            //select range in cells
-            //IXLRange rng = ws.Range("A1:H1");
-            var firstCell = ws.FirstCellUsed();
-            var lastCell = ws.LastCellUsed();
-            var range = ws.Range(firstCell.Address, lastCell.Address);
-
-            range.Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
 
 
-            ws.Row(1).Sort();
+            // Add a bunch of numbers to filter
+            ws.Cell("a2").SetValue(10)
+                         .CellBelow().SetValue(2)
+                         .CellBelow().SetValue(3)
+                         .CellBelow().SetValue(3)
+                         .CellBelow().SetValue(5)
+                         .CellBelow().SetValue(1)
+                         .CellBelow().SetValue(4);
+            ws.Cell("b2").SetValue("a1")
+                         .CellBelow().SetValue("a")
+                         .CellBelow().SetValue("b")
+                         .CellBelow().SetValue("c")
+                         .CellBelow().SetValue("d")
+                         .CellBelow().SetValue("e")
+                         .CellBelow().SetValue("f");
+
+            // Add filters
+            ws.RangeUsed().SetAutoFilter().Column(1).LessThan(4);
+            ws.AutoFilter.Sort(1);
+
+
 
             wb.SaveAs(@"Y:\Liverpool projects\Windows form app\Ruth\test.xlsx");
         }

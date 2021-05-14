@@ -86,7 +86,7 @@ namespace UsingClosedXML
             this.box_0101.Size = new System.Drawing.Size(100, 23);
             this.box_0101.TabIndex = 3;
             this.box_0101.Text = "1";
-            this.box_0101.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // button2
             // 
