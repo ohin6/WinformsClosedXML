@@ -20,3 +20,8 @@ Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\n
 Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
 Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\ExcelNumberFormat.dll
 Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\obj\Debug\netcoreapp3.1\UsingClosedXML.csproj.CopyComplete
+Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\EasyXMLSerializerCore.dll
+Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\GemBox.Spreadsheet.dll
+Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\GemBox.Spreadsheet.dll
+Y:\Liverpool projects\Windows form app\UsingClosedXML\UsingClosedXML\bin\Debug\netcoreapp3.1\Aspose.Cells.dll

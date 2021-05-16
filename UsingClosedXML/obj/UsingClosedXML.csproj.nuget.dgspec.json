@@ -40,9 +40,25 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[21.5.0, )"
+            },
             "ClosedXML": {
               "target": "Package",
               "version": "[0.95.4, )"
+            },
+            "EasyXMLSerializer": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[47.0.1207, )"
+            },
+            "Select2.js": {
+              "target": "Package",
+              "version": "[4.0.13, )"
             }
           },
           "imports": [
