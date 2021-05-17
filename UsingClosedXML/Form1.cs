@@ -234,6 +234,159 @@ namespace UsingClosedXML
 
             }
         }
+
+        private void box_0101_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_1.ForeColor = Color.Green;
+                warningLabel_1.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_1.ForeColor = Color.Red;
+                warningLabel_1.Text = "Invalid Input";
+            }
+
+        }
+
+        private void box_0102_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_2.ForeColor = Color.Green;
+                warningLabel_2.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_2.ForeColor = Color.Red;
+                warningLabel_2.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0103_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_3.ForeColor = Color.Green;
+                warningLabel_3.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_3.ForeColor = Color.Red;
+                warningLabel_3.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0104_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_4.ForeColor = Color.Green;
+                warningLabel_4.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_4.ForeColor = Color.Red;
+                warningLabel_4.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0105_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_5.ForeColor = Color.Green;
+                warningLabel_5.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_5.ForeColor = Color.Red;
+                warningLabel_5.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0106_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_6.ForeColor = Color.Green;
+                warningLabel_6.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_6.ForeColor = Color.Red;
+                warningLabel_6.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0107_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_7.ForeColor = Color.Green;
+                warningLabel_7.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_7.ForeColor = Color.Red;
+                warningLabel_7.Text = "Invalid Input";
+            }
+        }
+
+        private void box_0108_TextChanged(object sender, EventArgs e)
+        {
+            if (box_0101.Text == "")
+            {
+                return;
+            }
+            /// if text is numerical and length = 5 then the input is valid
+            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            {
+                warningLabel_8.ForeColor = Color.Green;
+                warningLabel_8.Text = "Valid Input";
+            }
+            else
+            {
+                warningLabel_8.ForeColor = Color.Red;
+                warningLabel_8.Text = "Invalid Input";
+            }
+        }
     }
 }
 
