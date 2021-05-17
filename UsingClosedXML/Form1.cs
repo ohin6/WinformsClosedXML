@@ -23,6 +23,25 @@ namespace UsingClosedXML
         public Form1()
         {
             InitializeComponent();
+
+            /// Initialise lists of all text boxes and respective labels
+            List<System.Windows.Forms.TextBox> textBoxes = new List<System.Windows.Forms.TextBox>
+            {
+                box_0101, box_0102, box_0103, box_0104, box_0105, box_0106, box_0107, box_0108
+            };
+            List<System.Windows.Forms.Label> labels = new List<System.Windows.Forms.Label>
+            {
+                label_1, label_2, label_3, label_4, label_5, label_6, label_7, label_8
+            };
+
+            /// hide the boxes and labels before the user selected number of samples
+            for (int i = 0; i < 8; i++)
+            {
+                textBoxes[i].Hide();
+                labels[i].Hide();
+            }
+
+
         }
 
         
@@ -189,7 +208,32 @@ namespace UsingClosedXML
             
         }
 
- 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<System.Windows.Forms.TextBox> textBoxes = new List<System.Windows.Forms.TextBox>
+            {
+                box_0101, box_0102, box_0103, box_0104, box_0105, box_0106, box_0107, box_0108
+            };
+
+            List<System.Windows.Forms.Label> labels = new List<System.Windows.Forms.Label>
+            {
+                label_1, label_2, label_3, label_4, label_5, label_6, label_7, label_8
+            };
+
+            /// hide the boxes and labels before the user selected number of samples
+            for (int i = 0; i < 8; i++)
+            {
+                textBoxes[i].Hide();
+                labels[i].Hide();
+            }
+
+            for (int i = 0; i < comboBox1.SelectedIndex + 1; i++)
+            {
+                textBoxes[i].Show();
+                labels[i].Show();
+
+            }
+        }
     }
 }
 
