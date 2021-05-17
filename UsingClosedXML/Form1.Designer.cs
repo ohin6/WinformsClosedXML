@@ -50,7 +50,7 @@ namespace UsingClosedXML
             this.label_8 = new System.Windows.Forms.Label();
             this.Lbl_warning = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Lbl_samples = new System.Windows.Forms.Label();
             this.warningLabel_1 = new System.Windows.Forms.Label();
             this.warningLabel_2 = new System.Windows.Forms.Label();
             this.warningLabel_3 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@ namespace UsingClosedXML
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 86);
+            this.button1.Location = new System.Drawing.Point(12, 45);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -75,7 +75,7 @@ namespace UsingClosedXML
             // Lbl_1
             // 
             this.Lbl_1.AutoSize = true;
-            this.Lbl_1.Location = new System.Drawing.Point(117, 86);
+            this.Lbl_1.Location = new System.Drawing.Point(117, 45);
             this.Lbl_1.Name = "Lbl_1";
             this.Lbl_1.Size = new System.Drawing.Size(104, 15);
             this.Lbl_1.TabIndex = 1;
@@ -84,7 +84,7 @@ namespace UsingClosedXML
             // label_1
             // 
             this.label_1.AutoSize = true;
-            this.label_1.Location = new System.Drawing.Point(354, 132);
+            this.label_1.Location = new System.Drawing.Point(14, 163);
             this.label_1.Name = "label_1";
             this.label_1.Size = new System.Drawing.Size(53, 15);
             this.label_1.TabIndex = 2;
@@ -92,7 +92,7 @@ namespace UsingClosedXML
             // 
             // box_0101
             // 
-            this.box_0101.Location = new System.Drawing.Point(427, 129);
+            this.box_0101.Location = new System.Drawing.Point(87, 160);
             this.box_0101.Name = "box_0101";
             this.box_0101.Size = new System.Drawing.Size(100, 23);
             this.box_0101.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace UsingClosedXML
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(354, 382);
+            this.button2.Location = new System.Drawing.Point(14, 413);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 40);
             this.button2.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace UsingClosedXML
             // 
             // box_0102
             // 
-            this.box_0102.Location = new System.Drawing.Point(427, 158);
+            this.box_0102.Location = new System.Drawing.Point(87, 189);
             this.box_0102.Name = "box_0102";
             this.box_0102.Size = new System.Drawing.Size(100, 23);
             this.box_0102.TabIndex = 6;
@@ -119,7 +119,7 @@ namespace UsingClosedXML
             // label_2
             // 
             this.label_2.AutoSize = true;
-            this.label_2.Location = new System.Drawing.Point(354, 161);
+            this.label_2.Location = new System.Drawing.Point(14, 192);
             this.label_2.Name = "label_2";
             this.label_2.Size = new System.Drawing.Size(53, 15);
             this.label_2.TabIndex = 5;
@@ -127,7 +127,7 @@ namespace UsingClosedXML
             // 
             // box_0103
             // 
-            this.box_0103.Location = new System.Drawing.Point(427, 187);
+            this.box_0103.Location = new System.Drawing.Point(87, 218);
             this.box_0103.Name = "box_0103";
             this.box_0103.Size = new System.Drawing.Size(100, 23);
             this.box_0103.TabIndex = 8;
@@ -136,7 +136,7 @@ namespace UsingClosedXML
             // label_3
             // 
             this.label_3.AutoSize = true;
-            this.label_3.Location = new System.Drawing.Point(354, 190);
+            this.label_3.Location = new System.Drawing.Point(14, 221);
             this.label_3.Name = "label_3";
             this.label_3.Size = new System.Drawing.Size(53, 15);
             this.label_3.TabIndex = 7;
@@ -144,7 +144,7 @@ namespace UsingClosedXML
             // 
             // box_0104
             // 
-            this.box_0104.Location = new System.Drawing.Point(427, 216);
+            this.box_0104.Location = new System.Drawing.Point(87, 247);
             this.box_0104.Name = "box_0104";
             this.box_0104.Size = new System.Drawing.Size(100, 23);
             this.box_0104.TabIndex = 10;
@@ -153,7 +153,7 @@ namespace UsingClosedXML
             // label_4
             // 
             this.label_4.AutoSize = true;
-            this.label_4.Location = new System.Drawing.Point(354, 219);
+            this.label_4.Location = new System.Drawing.Point(14, 250);
             this.label_4.Name = "label_4";
             this.label_4.Size = new System.Drawing.Size(53, 15);
             this.label_4.TabIndex = 9;
@@ -161,7 +161,7 @@ namespace UsingClosedXML
             // 
             // box_0105
             // 
-            this.box_0105.Location = new System.Drawing.Point(427, 245);
+            this.box_0105.Location = new System.Drawing.Point(87, 276);
             this.box_0105.Name = "box_0105";
             this.box_0105.Size = new System.Drawing.Size(100, 23);
             this.box_0105.TabIndex = 12;
@@ -170,7 +170,7 @@ namespace UsingClosedXML
             // label_5
             // 
             this.label_5.AutoSize = true;
-            this.label_5.Location = new System.Drawing.Point(354, 248);
+            this.label_5.Location = new System.Drawing.Point(14, 279);
             this.label_5.Name = "label_5";
             this.label_5.Size = new System.Drawing.Size(53, 15);
             this.label_5.TabIndex = 11;
@@ -178,7 +178,7 @@ namespace UsingClosedXML
             // 
             // box_0106
             // 
-            this.box_0106.Location = new System.Drawing.Point(427, 274);
+            this.box_0106.Location = new System.Drawing.Point(87, 305);
             this.box_0106.Name = "box_0106";
             this.box_0106.Size = new System.Drawing.Size(100, 23);
             this.box_0106.TabIndex = 14;
@@ -187,7 +187,7 @@ namespace UsingClosedXML
             // label_6
             // 
             this.label_6.AutoSize = true;
-            this.label_6.Location = new System.Drawing.Point(354, 277);
+            this.label_6.Location = new System.Drawing.Point(14, 308);
             this.label_6.Name = "label_6";
             this.label_6.Size = new System.Drawing.Size(53, 15);
             this.label_6.TabIndex = 13;
@@ -195,7 +195,7 @@ namespace UsingClosedXML
             // 
             // box_0107
             // 
-            this.box_0107.Location = new System.Drawing.Point(427, 303);
+            this.box_0107.Location = new System.Drawing.Point(87, 334);
             this.box_0107.Name = "box_0107";
             this.box_0107.Size = new System.Drawing.Size(100, 23);
             this.box_0107.TabIndex = 16;
@@ -204,7 +204,7 @@ namespace UsingClosedXML
             // label_7
             // 
             this.label_7.AutoSize = true;
-            this.label_7.Location = new System.Drawing.Point(354, 306);
+            this.label_7.Location = new System.Drawing.Point(14, 337);
             this.label_7.Name = "label_7";
             this.label_7.Size = new System.Drawing.Size(53, 15);
             this.label_7.TabIndex = 15;
@@ -212,7 +212,7 @@ namespace UsingClosedXML
             // 
             // box_0108
             // 
-            this.box_0108.Location = new System.Drawing.Point(427, 332);
+            this.box_0108.Location = new System.Drawing.Point(87, 363);
             this.box_0108.Name = "box_0108";
             this.box_0108.Size = new System.Drawing.Size(100, 23);
             this.box_0108.TabIndex = 18;
@@ -221,7 +221,7 @@ namespace UsingClosedXML
             // label_8
             // 
             this.label_8.AutoSize = true;
-            this.label_8.Location = new System.Drawing.Point(354, 335);
+            this.label_8.Location = new System.Drawing.Point(14, 366);
             this.label_8.Name = "label_8";
             this.label_8.Size = new System.Drawing.Size(53, 15);
             this.label_8.TabIndex = 17;
@@ -247,25 +247,25 @@ namespace UsingClosedXML
             "6",
             "7",
             "8"});
-            this.comboBox1.Location = new System.Drawing.Point(594, 85);
+            this.comboBox1.Location = new System.Drawing.Point(12, 120);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 21;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label10
+            // Lbl_samples
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(594, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 15);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Number of Samples";
+            this.Lbl_samples.AutoSize = true;
+            this.Lbl_samples.Location = new System.Drawing.Point(12, 91);
+            this.Lbl_samples.Name = "Lbl_samples";
+            this.Lbl_samples.Size = new System.Drawing.Size(112, 15);
+            this.Lbl_samples.TabIndex = 22;
+            this.Lbl_samples.Text = "Number of Samples";
             // 
             // warningLabel_1
             // 
             this.warningLabel_1.AutoSize = true;
-            this.warningLabel_1.Location = new System.Drawing.Point(563, 137);
+            this.warningLabel_1.Location = new System.Drawing.Point(223, 168);
             this.warningLabel_1.Name = "warningLabel_1";
             this.warningLabel_1.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_1.TabIndex = 23;
@@ -273,7 +273,7 @@ namespace UsingClosedXML
             // warningLabel_2
             // 
             this.warningLabel_2.AutoSize = true;
-            this.warningLabel_2.Location = new System.Drawing.Point(563, 166);
+            this.warningLabel_2.Location = new System.Drawing.Point(223, 197);
             this.warningLabel_2.Name = "warningLabel_2";
             this.warningLabel_2.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_2.TabIndex = 24;
@@ -281,7 +281,7 @@ namespace UsingClosedXML
             // warningLabel_3
             // 
             this.warningLabel_3.AutoSize = true;
-            this.warningLabel_3.Location = new System.Drawing.Point(563, 195);
+            this.warningLabel_3.Location = new System.Drawing.Point(223, 226);
             this.warningLabel_3.Name = "warningLabel_3";
             this.warningLabel_3.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_3.TabIndex = 25;
@@ -289,7 +289,7 @@ namespace UsingClosedXML
             // warningLabel_4
             // 
             this.warningLabel_4.AutoSize = true;
-            this.warningLabel_4.Location = new System.Drawing.Point(563, 224);
+            this.warningLabel_4.Location = new System.Drawing.Point(223, 255);
             this.warningLabel_4.Name = "warningLabel_4";
             this.warningLabel_4.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_4.TabIndex = 26;
@@ -297,7 +297,7 @@ namespace UsingClosedXML
             // warningLabel_5
             // 
             this.warningLabel_5.AutoSize = true;
-            this.warningLabel_5.Location = new System.Drawing.Point(563, 253);
+            this.warningLabel_5.Location = new System.Drawing.Point(223, 284);
             this.warningLabel_5.Name = "warningLabel_5";
             this.warningLabel_5.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_5.TabIndex = 27;
@@ -305,7 +305,7 @@ namespace UsingClosedXML
             // warningLabel_6
             // 
             this.warningLabel_6.AutoSize = true;
-            this.warningLabel_6.Location = new System.Drawing.Point(563, 282);
+            this.warningLabel_6.Location = new System.Drawing.Point(223, 313);
             this.warningLabel_6.Name = "warningLabel_6";
             this.warningLabel_6.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_6.TabIndex = 28;
@@ -313,7 +313,7 @@ namespace UsingClosedXML
             // warningLabel_7
             // 
             this.warningLabel_7.AutoSize = true;
-            this.warningLabel_7.Location = new System.Drawing.Point(563, 311);
+            this.warningLabel_7.Location = new System.Drawing.Point(223, 342);
             this.warningLabel_7.Name = "warningLabel_7";
             this.warningLabel_7.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_7.TabIndex = 29;
@@ -321,7 +321,7 @@ namespace UsingClosedXML
             // warningLabel_8
             // 
             this.warningLabel_8.AutoSize = true;
-            this.warningLabel_8.Location = new System.Drawing.Point(563, 340);
+            this.warningLabel_8.Location = new System.Drawing.Point(223, 371);
             this.warningLabel_8.Name = "warningLabel_8";
             this.warningLabel_8.Size = new System.Drawing.Size(0, 15);
             this.warningLabel_8.TabIndex = 30;
@@ -329,16 +329,17 @@ namespace UsingClosedXML
             // warningLabel
             // 
             this.warningLabel.AutoSize = true;
-            this.warningLabel.Location = new System.Drawing.Point(499, 395);
+            this.warningLabel.Location = new System.Drawing.Point(159, 426);
             this.warningLabel.Name = "warningLabel";
-            this.warningLabel.Size = new System.Drawing.Size(0, 15);
+            this.warningLabel.Size = new System.Drawing.Size(59, 15);
             this.warningLabel.TabIndex = 31;
+            this.warningLabel.Text = "File Saved";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(490, 474);
             this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.warningLabel_8);
             this.Controls.Add(this.warningLabel_7);
@@ -348,7 +349,7 @@ namespace UsingClosedXML
             this.Controls.Add(this.warningLabel_3);
             this.Controls.Add(this.warningLabel_2);
             this.Controls.Add(this.warningLabel_1);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Lbl_samples);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Lbl_warning);
             this.Controls.Add(this.box_0108);
@@ -401,7 +402,7 @@ namespace UsingClosedXML
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label Lbl_warning;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Lbl_samples;
         private System.Windows.Forms.Label warningLabel_1;
         private System.Windows.Forms.Label warningLabel_2;
         private System.Windows.Forms.Label warningLabel_3;

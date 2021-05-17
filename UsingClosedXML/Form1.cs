@@ -1,19 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Data;
-using EasyXMLSerializer;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClosedXML.Excel;
-using GemBox.Spreadsheet;
-using ClosedXML;
-using Excel = Microsoft.Office.Interop.Excel;
 using Aspose.Cells;
 
 namespace UsingClosedXML
@@ -41,6 +32,11 @@ namespace UsingClosedXML
                 labels[i].Hide();
             }
 
+            //Hide other parameters
+            Lbl_samples.Hide();
+            comboBox1.Hide();
+            button2.Hide();
+            warningLabel.Hide();
 
         }
 
@@ -66,8 +62,13 @@ namespace UsingClosedXML
                     Lbl_1.Text = filePathString;
                     //LOOP THROUGH FILES- if we choose to do this we'll probably want to use a separate output file for each file
                 }
-
+               
             }
+
+            //unhide 
+            Lbl_samples.Show();
+            comboBox1.Show();
+            button2.Show();
         }
 
       
@@ -78,7 +79,7 @@ namespace UsingClosedXML
             foreach (string sFileName in filePath)
             {
                 //Create workbook used closedXML
-                IXLWorkbook wb = new XLWorkbook(@"Y:\Liverpool projects\Windows form app\Ruth\Auto_OH166_Chip_1_Oncomine_Myeloid_hods-department_500.bcmatrix.xlsx");//Import file change to "sFileName"
+                IXLWorkbook wb = new XLWorkbook(sFileName);//Import file change to "sFileName"
                 var ws = wb.Worksheet(1);                                                                                                                                                     //IXLWorksheet ws2 = wb.Worksheets.Add("Sample Sheet");//In workbook create worksheet and give name
                                                                                                                                                                                               //To delete worksheet ---> wb.Worksheet("Sample Sheet").Delete();
 
@@ -98,7 +99,7 @@ namespace UsingClosedXML
                 int numColumn = rngData.ColumnCount();
 
                 // Create a file stream containing the Excel file to be opened
-                FileStream fstream = new FileStream(@"Y:\Liverpool projects\Windows form app\Ruth\Auto_OH166_Chip_1_Oncomine_Myeloid_hods-department_500.bcmatrix.xlsx", FileMode.Open);
+                FileStream fstream = new FileStream(sFileName, FileMode.Open);
 
                 // Instantiate a Workbook object
                 //Opening the Excel file through the file stream
@@ -205,6 +206,8 @@ namespace UsingClosedXML
 
             }
 
+            //Show message saved
+            warningLabel.Show();
             
         }
 
@@ -257,12 +260,12 @@ namespace UsingClosedXML
 
         private void box_0102_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0102.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0102.Text, out _) && box_0102.Text.Length == 5)
             {
                 warningLabel_2.ForeColor = Color.Green;
                 warningLabel_2.Text = "Valid Input";
@@ -276,12 +279,12 @@ namespace UsingClosedXML
 
         private void box_0103_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0103.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0103.Text, out _) && box_0103.Text.Length == 5)
             {
                 warningLabel_3.ForeColor = Color.Green;
                 warningLabel_3.Text = "Valid Input";
@@ -295,12 +298,12 @@ namespace UsingClosedXML
 
         private void box_0104_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0104.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0104.Text, out _) && box_0104.Text.Length == 5)
             {
                 warningLabel_4.ForeColor = Color.Green;
                 warningLabel_4.Text = "Valid Input";
@@ -314,12 +317,12 @@ namespace UsingClosedXML
 
         private void box_0105_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0105.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0105.Text, out _) && box_0105.Text.Length == 5)
             {
                 warningLabel_5.ForeColor = Color.Green;
                 warningLabel_5.Text = "Valid Input";
@@ -333,12 +336,12 @@ namespace UsingClosedXML
 
         private void box_0106_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0106.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0106.Text, out _) && box_0106.Text.Length == 5)
             {
                 warningLabel_6.ForeColor = Color.Green;
                 warningLabel_6.Text = "Valid Input";
@@ -352,12 +355,12 @@ namespace UsingClosedXML
 
         private void box_0107_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0107.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0107.Text, out _) && box_0107.Text.Length == 5)
             {
                 warningLabel_7.ForeColor = Color.Green;
                 warningLabel_7.Text = "Valid Input";
@@ -371,12 +374,12 @@ namespace UsingClosedXML
 
         private void box_0108_TextChanged(object sender, EventArgs e)
         {
-            if (box_0101.Text == "")
+            if (box_0108.Text == "")
             {
                 return;
             }
             /// if text is numerical and length = 5 then the input is valid
-            if (int.TryParse(box_0101.Text, out _) && box_0101.Text.Length == 5)
+            if (int.TryParse(box_0108.Text, out _) && box_0108.Text.Length == 5)
             {
                 warningLabel_8.ForeColor = Color.Green;
                 warningLabel_8.Text = "Valid Input";
